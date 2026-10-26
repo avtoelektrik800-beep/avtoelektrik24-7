@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Автоэлектрик Ташкент 24/7 — выездной автоэлектрик</title>
+<meta name="description" content="Выездной автоэлектрик в Ташкенте 24/7: прикурить аккумулятор, вскрыть авто, ремонт стартера и генератора, шиномонтаж, ремонт ходовой части. Приедем за 20 минут.">
+<meta name="theme-color" content="#0b5aa2">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b5aa2'/%3E%3Cpath d='M36 8 17 36h14l-4 20 20-28H33z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header" id="top">
+  <div class="wrap header__in">
+    <a href="#top" class="logo" aria-label="Avtoelektrik">
+      <svg viewBox="0 0 64 64" width="36" height="36" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0b5aa2"/><path d="M36 8 17 36h14l-4 20 20-28H33z" fill="#fff"/></svg>
+      <span class="logo__t"><b data-i18n="brand"></b><small data-i18n="logo_sub"></small></span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#prices" data-i18n="nav_prices"></a>
+      <a href="#reviews" data-i18n="nav_reviews"></a>
+      <a href="#faq" data-i18n="nav_faq"></a>
+      <a href="#order" data-i18n="nav_contact"></a>
+    </nav>
+    <div class="header__r">
+      <a class="hphone js-tel" href="tel:+998958006030">
+        <b class="js-tel-text"></b>
+        <small data-i18n="call_free"></small>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero__in">
+    <div class="hero__l">
+      <p class="badge"><span class="dot"></span><span data-i18n="badge1"></span><i></i><span data-i18n="badge2"></span></p>
+      <h1><span class="blue" data-i18n="h1a"></span> <span data-i18n="h1b"></span></h1>
+      <p class="lead" data-i18n-html="lead"></p>
+      <div class="cta">
+        <a class="btn btn--blue js-tel" href="tel:+998958006030">
+          <svg viewBox="0 0 24 24" width="17" height="17"><path fill="currentColor" d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>
+          <span data-i18n="cta_call"></span>
+        </a>
+        <a class="btn btn--line js-tg" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="17" height="17"><path fill="currentColor" d="M21.9 4.3 18.7 19.4c-.2 1-.9 1.3-1.7.8l-4.8-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.4-4.9 8.9-8c.4-.3-.1-.5-.6-.2L6.6 13.2 1.9 11.7c-1-.3-1-1 .2-1.5L20.4 3.1c.9-.3 1.6.2 1.5 1.2z"/></svg>
+          <span data-i18n="cta_tg"></span>
+        </a>
+      </div>
+      <p class="note"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span data-i18n="note"></span></p>
+    </div>
+
+    <div class="hero__r">
+      <div class="live">
+        <div class="live__top">
+          <div class="avs"><i>AK</i><i>MP</i><i>TY</i></div>
+          <div><b id="liveMasters"></b><small data-i18n="live_today"></small></div>
+        </div>
+        <dl class="live__rows">
+          <div><dt data-i18n="live_avg"></dt><dd class="blue" id="liveAvg"></dd></div>
+          <div><dt data-i18n="live_month"></dt><dd id="liveMonth"></dd></div>
+          <div><dt data-i18n="live_rating"></dt><dd><span class="stars">★★★★★</span> <span id="liveRating"></span></dd></div>
+        </dl>
+        <p class="live__on"><span class="dot"></span><span data-i18n-html="live_online"></span></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <ul class="feat" id="feat"></ul>
+  </div>
+</section>
+
+<!-- PRICES -->
+<section class="sec" id="prices">
+  <div class="wrap">
+    <div class="head"><p class="eyebrow" data-i18n="pr_eyebrow"></p><h2 data-i18n="pr_title"></h2></div>
+    <div class="prices" id="prices-list"></div>
+    <p class="pr__note" id="prNote"></p>
+    <div class="center"><a class="btn btn--blue" href="#order" data-i18n="pr_cta"></a></div>
+  </div>
+</section>
+
+<!-- ADVANTAGES -->
+<section class="sec sec--soft" id="why">
+  <div class="wrap">
+    <div class="head"><p class="eyebrow" data-i18n="adv_eyebrow"></p><h2 data-i18n="adv_title"></h2></div>
+    <div class="stats" id="stats"></div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="sec" id="process">
+  <div class="wrap">
+    <div class="head"><p class="eyebrow" data-i18n="proc_eyebrow"></p><h2 data-i18n="proc_title"></h2></div>
+    <ol class="steps" id="steps"></ol>
+  </div>
+</section>
+
+<!-- ORDER -->
+<section class="sec order" id="order">
+  <div class="wrap order__in">
+    <div class="order__l">
+      <p class="eyebrow eyebrow--l" data-i18n="ord_eyebrow"></p>
+      <h2 data-i18n="ord_title"></h2>
+      <p class="order__lead" data-i18n="ord_lead"></p>
+      <ul class="checks">
+        <li data-i18n="ord_1"></li>
+        <li data-i18n="ord_2"></li>
+        <li data-i18n="ord_3"></li>
+      </ul>
+    </div>
+    <form class="form" id="form" novalidate>
+      <label><span data-i18n="f_name"></span><input type="text" id="fName" autocomplete="name" data-i18n-ph="f_name_ph"></label>
+      <label><span data-i18n="f_phone"></span><input type="tel" id="fPhone" autocomplete="tel" inputmode="tel" placeholder="+998"></label>
+      <label><span data-i18n="f_problem"></span><select id="fProblem"></select></label>
+      <p class="form__err" id="fErr" role="alert"></p>
+      <button class="btn btn--blue btn--block" type="submit" data-i18n="f_send"></button>
+      <p class="form__tiny" data-i18n="f_tiny"></p>
+    </form>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="sec" id="reviews">
+  <div class="wrap">
+    <div class="head"><p class="eyebrow" data-i18n="rev_eyebrow"></p><h2 data-i18n="rev_title"></h2><p class="sub" data-i18n="rev_lead"></p></div>
+    <div class="rev" id="rev"></div>
+    <div class="rev__nav">
+      <button type="button" id="revPrev" aria-label="Prev">‹</button>
+      <div class="dots" id="dots"></div>
+      <button type="button" id="revNext" aria-label="Next">›</button>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec sec--soft" id="faq">
+  <div class="wrap faqw">
+    <div class="head"><p class="eyebrow" data-i18n="faq_eyebrow"></p><h2 data-i18n="faq_title"></h2></div>
+    <div class="faq" id="faq-list"></div>
+  </div>
+</section>
+
+<!-- SEO -->
+<section class="seo">
+  <div class="wrap seo__in">
+    <h2 data-i18n="seo_title"></h2>
+    <p class="clamp" id="seoText" data-i18n="seo_text"></p>
+    <button type="button" class="more" id="seoMore"></button>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__in">
+    <div class="footer__brand">
+      <a href="#top" class="logo logo--w">
+        <svg viewBox="0 0 64 64" width="36" height="36" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#fff"/><path d="M36 8 17 36h14l-4 20 20-28H33z" fill="#0b5aa2"/></svg>
+        <span class="logo__t"><b data-i18n="brand"></b><small data-i18n="logo_sub"></small></span>
+      </a>
+      <p data-i18n="foot_text"></p>
+    </div>
+    <div><h3 data-i18n="foot_srv"></h3><ul id="foot-srv"></ul></div>
+    <div><h3 data-i18n="foot_nav"></h3>
+      <ul>
+        <li><a href="#prices" data-i18n="nav_prices"></a></li>
+        <li><a href="#reviews" data-i18n="nav_reviews"></a></li>
+        <li><a href="#faq" data-i18n="nav_faq"></a></li>
+        <li><a href="#order" data-i18n="nav_contact"></a></li>
+      </ul>
+    </div>
+    <div><h3 data-i18n="foot_contact"></h3>
+      <ul>
+        <li><a class="js-tel" href="tel:+998958006030"><span class="js-tel-text"></span></a></li>
+        <li><a class="js-tg" href="#" target="_blank" rel="noopener">Telegram</a></li>
+        <li data-i18n="foot_hours"></li>
+        <li data-i18n="foot_city"></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer__bot">© <span id="year"></span> · <span data-i18n="rights"></span></div>
+</footer>
+
+<div class="float" aria-label="Contacts">
+  <a class="float__b float__b--wa js-wa" href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" width="26" height="26"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.7 1.2 1.5 1.9 1 .9 1.9 1.2 2.2 1.3.3.1.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.3z"/></svg></a>
+  <a class="float__b float__b--tg js-tg" href="#" target="_blank" rel="noopener" aria-label="Telegram"><svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M21.9 4.3 18.7 19.4c-.2 1-.9 1.3-1.7.8l-4.8-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.4-4.9 8.9-8c.4-.3-.1-.5-.6-.2L6.6 13.2 1.9 11.7c-1-.3-1-1 .2-1.5L20.4 3.1c.9-.3 1.6.2 1.5 1.2z"/></svg></a>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

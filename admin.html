@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Admin panel — Avtoelektrik</title>
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<!-- login -->
+<section class="login" id="login">
+  <form class="login__box" id="loginForm">
+    <h1>Admin panel</h1>
+    <p>Parolni kiriting</p>
+    <input type="password" id="pass" autocomplete="current-password" autofocus>
+    <p class="err" id="loginErr"></p>
+    <button class="btn btn--main" type="submit">Kirish</button>
+  </form>
+</section>
+
+<!-- app -->
+<div class="app" id="app" hidden>
+  <header class="top">
+    <div class="top__in">
+      <strong>Avtoelektrik · admin</strong>
+      <div class="top__btns">
+        <button class="btn" id="btnPreview" type="button">Saytda ko‘rish</button>
+        <button class="btn btn--main" id="btnDownload" type="button">data.js yuklab olish</button>
+        <button class="btn btn--ghost" id="btnLogout" type="button">Chiqish</button>
+      </div>
+    </div>
+    <nav class="tabs" id="tabs">
+      <button data-tab="config" class="on">Aloqa</button>
+      <button data-tab="services">Xizmatlar</button>
+      <button data-tab="stats">Afzalliklar</button>
+      <button data-tab="reviews">Sharhlar</button>
+      <button data-tab="faq">Savollar</button>
+      <button data-tab="help">Yordam</button>
+    </nav>
+  </header>
+
+  <main class="main">
+    <p class="state" id="state">O‘zgarish yo‘q</p>
+    <div id="panel"></div>
+  </main>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+<script src="data.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
